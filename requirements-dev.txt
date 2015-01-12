@@ -1,0 +1,6 @@
+-r requirements.txt
+
+bumpversion
+flake8
+invoke
+wheel>=0.23.0
