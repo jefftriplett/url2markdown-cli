@@ -8,7 +8,7 @@ Fetch a url and translate it to markdown in one command.
 Usage
 -----
 
-First, get cookiecutter. Trust me, it's awesome::
+First, get cookiecutter. Trust me, it's awesome:
 
 .. code-block:: bash
 
