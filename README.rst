@@ -18,7 +18,7 @@ To use:
 
 .. code-block:: bash
 
-    python url2markdown-cli.py --with-cache https://www.djangoproject.com/
+    url2markdown --with-cache https://www.djangoproject.com/
 
 To use your own custom url2markdown server instance (you should):
 
