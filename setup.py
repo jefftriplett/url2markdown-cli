@@ -47,11 +47,11 @@ setup(
     author_email='jeff.triplett@gmail.com',
     url='https://github.com/jefftriplett/url2markdown-cli',
     include_package_data=True,
-    py_modules=['url2markdown-cli'],
+    py_modules=['url2markdown_cli'],
     install_requires=get_requirements('requirements.txt'),
     license="BSD",
     zip_safe=False,
-    keywords='url2markdown-cli',
+    keywords='url2markdown, url2markdown-cli',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Framework :: Django',
