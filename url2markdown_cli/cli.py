@@ -19,14 +19,12 @@ import click
 import os
 import requests
 
+from url2markdown_cli import __version__
+
 try:
     import requests_cache
 except ImportError:
     requests_cache = None
-
-__author__ = 'Jeff Triplett'
-__email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.4.1'
 
 URL2MARKDOWN_URL = os.environ.get('URL2MARKDOWN_URL', 'http://markdownplease.com/?url={url}')
 
@@ -37,9 +35,10 @@ def url2markdown(url):
 
 
 @click.command()
+@click.version_option(prog_name='url2markdown-cli', version=__version__)
 @click.argument('url')
 @click.option('--with-cache', is_flag=True)
-def main(url, with_cache):
+def cli(url, with_cache):
     if with_cache:
         if requests_cache is None:
             raise NotImplementedError(
@@ -53,4 +52,4 @@ def main(url, with_cache):
 
 
 if __name__ == '__main__':
-    main()
+    cli()

@@ -28,7 +28,6 @@ history = open('HISTORY.md').read()
 install_requires = [
     'click',
     'requests',
-    'requests-cache',
 ]
 
 extras_require = {
@@ -43,10 +42,12 @@ setup(
     author='Jeff Triplett',
     author_email='jeff.triplett@gmail.com',
     url='https://github.com/jefftriplett/url2markdown-cli',
-    include_package_data=True,
-    py_modules=[
+    packages=[
         'url2markdown_cli',
     ],
+    entry_points={'console_scripts': [
+        'url2markdown = url2markdown_cli:cli',
+    ]},
     install_requires=install_requires,
     extras_require=extras_require,
     license="BSD",
@@ -65,7 +66,4 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    entry_points={'console_scripts': [
-        'url2markdown = url2markdown_cli:main',
-    ]},
 )
