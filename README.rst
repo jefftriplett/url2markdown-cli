@@ -8,7 +8,7 @@ Fetch a url and translate it to markdown in one command.
 Usage
 -----
 
-First, get cookiecutter. Trust me, it's awesome:
+To install:
 
 .. code-block:: bash
 
@@ -24,7 +24,7 @@ To use your own custom url2markdown server instance (you should):
 
 .. code-block:: bash
 
-    export URL2MARKDOWN_URL='http://url2markdown.herokuapp.com/?url={url}'
+    export URL2MARKDOWN_URL='http://markdownplease.com/?url={url}'
 
 
 Thanks
