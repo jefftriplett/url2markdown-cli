@@ -1,5 +1,9 @@
 ## History
 
+### 0.4.2 (2017-01-22)
+
+- Re-factors app structure
+
 ### 0.4.1 (2017-01-22)
 
 - Fixes README and HISTORY (oops)
