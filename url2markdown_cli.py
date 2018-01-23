@@ -24,8 +24,7 @@ __author__ = 'Jeff Triplett'
 __email__ = 'jeff.triplett@gmail.com'
 __version__ = '0.2.1'
 
-URL2MARKDOWN_URL = os.environ.get('URL2MARKDOWN_URL',
-                                  'http://url2markdown.herokuapp.com/?url={url}')
+URL2MARKDOWN_URL = os.environ.get('URL2MARKDOWN_URL', 'http://markdownplease.com/?url={url}')
 
 
 def url2markdown(url):
