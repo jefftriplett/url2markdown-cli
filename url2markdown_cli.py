@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 """
 
 Thanks to @kennethreitz for his url2markdown project which this compliments:
@@ -16,16 +15,14 @@ To use your own custom url2markdown server instance:
 
 """
 
-__author__ = 'Jeff Triplett'
-__email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.2.1'
-
-
 import click
 import os
 import requests
 import requests_cache
 
+__author__ = 'Jeff Triplett'
+__email__ = 'jeff.triplett@gmail.com'
+__version__ = '0.2.1'
 
 URL2MARKDOWN_URL = os.environ.get('URL2MARKDOWN_URL',
                                   'http://url2markdown.herokuapp.com/?url={url}')
