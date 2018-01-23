@@ -26,17 +26,15 @@ if sys.argv[-1] == 'publish':
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
+install_requires = [
+    'click',
+    'requests',
+    'requests-cache',
+]
 
-def get_requirements(filename):
-    f = open(filename).read()
-    reqs = [
-        # loop through list of requirements
-        x.strip() for x in f.splitlines()
-        # filter out comments and empty lines
-        if not x.strip().startswith('#')
-    ]
-    return reqs
-
+extras_require = {
+    'requests-cache': ['requests-cache'],
+}
 
 setup(
     name='url2markdown-cli',
@@ -47,8 +45,11 @@ setup(
     author_email='jeff.triplett@gmail.com',
     url='https://github.com/jefftriplett/url2markdown-cli',
     include_package_data=True,
-    py_modules=['url2markdown_cli'],
-    install_requires=get_requirements('requirements.txt'),
+    py_modules=[
+        'url2markdown_cli',
+    ],
+    install_requires=install_requires,
+    extras_require=extras_require,
     license="BSD",
     zip_safe=False,
     keywords='url2markdown, url2markdown-cli',
@@ -65,7 +66,6 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-
     entry_points={
         'console_scripts': [
             'url2markdown = url2markdown_cli:main',
