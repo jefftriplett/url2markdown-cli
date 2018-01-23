@@ -1,6 +1,12 @@
 History
 =========
 
+0.4.0 (2017-01-22)
+---------------------
+
+* Update to use markdownplease.com
+* Update requests-cache to be optional
+
 0.2.1 (2015-01-11)
 ---------------------
 
