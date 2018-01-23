@@ -26,7 +26,7 @@ except ImportError:
 
 __author__ = 'Jeff Triplett'
 __email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.2.1'
+__version__ = '0.3.0'
 
 URL2MARKDOWN_URL = os.environ.get('URL2MARKDOWN_URL', 'http://markdownplease.com/?url={url}')
 
