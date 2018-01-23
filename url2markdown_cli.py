@@ -18,7 +18,11 @@ To use your own custom url2markdown server instance:
 import click
 import os
 import requests
-import requests_cache
+
+try:
+    import requests_cache
+except ImportError:
+    requests_cache = None
 
 __author__ = 'Jeff Triplett'
 __email__ = 'jeff.triplett@gmail.com'
@@ -37,6 +41,12 @@ def url2markdown(url):
 @click.option('--with-cache', is_flag=True)
 def main(url, with_cache):
     if with_cache:
+        if requests_cache is None:
+            raise NotImplementedError(
+                'The --with-cache option requires that `requests-cache` to be installed. '
+                'Try `pip install url2markdown-cli[requests-cache]`.'
+            )
+
         requests_cache.install_cache()
 
     click.echo(url2markdown(url))
