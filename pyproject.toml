@@ -44,7 +44,7 @@ tag = true
 version_pattern = "YYYY.MM.INC1"
 
 [tool.bumpver.file_patterns]
-"url2markdown-cli/__init__.py" = [
+"url2markdown_cli/__init__.py" = [
     '__version__ = "{version}"',
 ]
 "pyproject.toml" = [
