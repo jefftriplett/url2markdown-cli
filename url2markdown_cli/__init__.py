@@ -1,4 +1,4 @@
-__version__ = "2024.10.1"
+__version__ = "2024.10.2"
 
 from .cli import cli  # NOQA
 
