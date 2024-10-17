@@ -1,8 +1,6 @@
-__author__ = 'Jeff Triplett'
-__email__ = 'jeff.triplett@gmail.com'
-__version__ = '0.4.2'
+__version__ = "2024.10.1"
 
 from .cli import cli  # NOQA
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     cli()
