@@ -1,5 +1,9 @@
 ## History
 
+### 2024.10.1 (2024-10-16)
+
+- Re-factors app structure for 2024
+
 ### 0.4.2 (2017-01-22)
 
 - Re-factors app structure
