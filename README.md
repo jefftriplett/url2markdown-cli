@@ -7,24 +7,20 @@ Fetch a url and translate it to markdown in one command.
 To install:
 
 ```shell
-$ pip install url2markdown-cli
+$ uv pip install url2markdown-cli
 ```
 
 To use:
 
 ```shell
-url2markdown --with-cache https://www.djangoproject.com/
+url2markdown https://www.djangoproject.com/
 ```
 
 To use your own custom url2markdown server instance (you should):
 
 ```shell
-export URL2MARKDOWN_URL='http://markdownplease.com/?url={url}'
+export URL2MARKDOWN_URL='https://urltomarkdown.herokuapp.com/?url={url}'
 ```
-
-## Thanks
-
-Thanks to @kennethreitz for his [url2markdown](https://github.com/kennethreitz/url2markdown) project which this compliments.
 
 ## Contact / Social Media
 
