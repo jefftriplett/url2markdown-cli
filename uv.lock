@@ -190,7 +190,7 @@ wheels = [
 
 [[package]]
 name = "url2markdown-cli"
-version = "2024.10.1"
+version = "2024.10.2"
 source = { virtual = "." }
 dependencies = [
     { name = "httpx" },
